@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { CheckCircle2, Circle, Music, Heart, Plus, Sparkles, User, PenTool, Calendar, History, Trash2, Timer, Play, Pause, RotateCcw, Palette, Lightbulb, Smile, Frown, Meh, Sun, Moon, Coffee } from 'lucide-react';
 
-export default function App() {
+
+function App() {
   const [activeTab, setActiveTab] = useState('tasks');
   
   // --- DATA ---
@@ -246,3 +245,5 @@ export default function App() {
     </div>
   );
 }
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
