@@ -1,6 +1,30 @@
-const { useState, useEffect, useMemo } = React;
-const { CheckCircle2, Circle, Music, Heart, Plus, Sparkles, User, PenTool, Calendar, History, Trash2, Timer, Play, Pause, RotateCcw, Palette, Lightbulb, Smile, Frown, Meh, Sun, Moon, Coffee } = lucide;
+const useState = React.useState;
+const useEffect = React.useEffect;
+const useMemo = React.useMemo;
 
+const CheckCircle2 = lucide.CheckCircle2;
+const Circle = lucide.Circle;
+const Music = lucide.Music;
+const Heart = lucide.Heart;
+const Plus = lucide.Plus;
+const Sparkles = lucide.Sparkles;
+const User = lucide.User;
+const PenTool = lucide.PenTool;
+const Calendar = lucide.Calendar;
+const History = lucide.History;
+const Trash2 = lucide.Trash2;
+const Timer = lucide.Timer;
+const Play = lucide.Play;
+const Pause = lucide.Pause;
+const RotateCcw = lucide.RotateCcw;
+const Palette = lucide.Palette;
+const Lightbulb = lucide.Lightbulb;
+const Smile = lucide.Smile;
+const Frown = lucide.Frown;
+const Meh = lucide.Meh;
+const Sun = lucide.Sun;
+const Moon = lucide.Moon;
+const Coffee = lucide.Coffee;
 // Your function App() starts here...
 
 function App() {
