@@ -1,6 +1,11 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { CheckCircle2, Circle, Music, Heart, Plus, Sparkles, User, PenTool, Calendar, History, Trash2, Timer, Play, Pause, RotateCcw, Palette, Lightbulb, Smile, Frown, Meh, Sun, Moon, Coffee } from 'lucide-react';
+const { useState, useEffect, useMemo } = React;
 
+// This helper makes sure we can use icons without the browser crashing
+const Icon = ({ name, ...props }) => {
+  const LucideIcon = lucide[name];
+  if (!LucideIcon) return null;
+  return <LucideIcon {...props} />;
+};
 export default function App() {
   const [activeTab, setActiveTab] = useState('tasks');
   
