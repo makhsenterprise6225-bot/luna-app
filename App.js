@@ -6,7 +6,7 @@ const Icon = ({ name, ...props }) => {
   if (!LucideIcon) return null;
   return <LucideIcon {...props} />;
 };
-export default function App() {
+function App() {
   const [activeTab, setActiveTab] = useState('tasks');
   
   // --- DATA ---
