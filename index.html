@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luna</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="manifest" href="manifest.json">
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="manifest" href="manifest.json">
 </head>
-<body>
-    <div id="root"></div>
-    <script type="text/babel" src="App.js"></script>
-    <script type="text/babel">
-        // This helper allows Lucide icons to work in the browser
-        setTimeout(() => {
-            lucide.createIcons();
-        }, 500);
-    </script>
+<body class="bg-slate-50">
+    <div id="root">
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; color: #94a3b8;">
+            Loading Luna...
+        </div>
+    </div>
+
+    <script type="text/babel" src="./App.js"></script>
 </body>
 </html>
